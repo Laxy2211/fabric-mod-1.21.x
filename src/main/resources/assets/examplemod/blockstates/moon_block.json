@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "":{
+      "model": "examplemod:block/moon_block"
+    }
+
+  }
+}

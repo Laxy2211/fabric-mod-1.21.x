@@ -1,0 +1,10 @@
+{
+  "item.examplemod.moonstone_ore": "Raw moon ",
+  "item.examplemod.moon_ingot": "Moon ingot",
+  "block.examplemod.moon_block": "Block of moon",
+  "block.examplemod.raw_moon_block": "block of raw moon",
+  "block.examplemod.mineral_of_moon": "Moon ore",
+  "block.examplemod.deepslate_moon_ore": "Deepslate moon ore",
+  "itemgroup.examplemod.moon_items": "Moon ore Items",
+  "itemgroup.examplemod.moon_blocks": "Moon blocks"
+}
