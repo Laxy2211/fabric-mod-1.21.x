@@ -31,6 +31,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DEEPSLATE_MOON_ORE);
                     } )
                     .build());
+    //prueba
 
     public static void registerItemGroups(){
         ExampleMod.LOGGER.info("Registering Item Groups for" + ExampleMod.MOD_ID);
