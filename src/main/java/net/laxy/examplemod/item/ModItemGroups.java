@@ -18,8 +18,20 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.MOONSTONE_ORE);
                         entries.add(ModItems.MOON_INGOT);
+
                     } )
                     .build());
+
+        public static final ItemGroup RUBY_GROUPS = Registry.register(Registries.ITEM_GROUP,
+                Identifier.of(ExampleMod.MOD_ID,"ruby_items"),
+                FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.RUBY_ORE))
+                        .displayName(Text.translatable("itemgroup.examplemod.ruby_items"))
+                        .entries((displayContext, entries) -> {
+                            entries.add(ModItems.RUBY_ORE);
+
+                        } )
+                        .build());
+
     public static final ItemGroup MOON_BLOCKS_GROUPS = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(ExampleMod.MOD_ID,"moon_blocks"),
             FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.RAW_MOON_BLOCK))

@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 public static final Item MOONSTONE_ORE = registerItem("moonstone_ore", new Item(new Item.Settings()));
 public static final Item MOON_INGOT = registerItem("moon_ingot",new Item(new Item.Settings()));
+public static final Item RUBY_ORE = registerItem("ruby_ore",new Item(new Item.Settings()));
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(ExampleMod.MOD_ID,name),item);
     }
@@ -20,6 +21,7 @@ public static final Item MOON_INGOT = registerItem("moon_ingot",new Item(new Ite
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries ->{
             entries.add(MOONSTONE_ORE);
             entries.add(MOON_INGOT);
+            entries.add(RUBY_ORE);
 
         } );
     }
