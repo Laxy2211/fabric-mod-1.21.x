@@ -5,6 +5,7 @@ import net.laxy.examplemod.ExampleMod;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.ExperienceDroppingBlock;
+import net.minecraft.block.MapColor;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -25,13 +26,21 @@ public class ModBlocks {
     public static final Block MINERAL_OF_MOON = registerBlock("mineral_of_moon",
             new ExperienceDroppingBlock(
                     UniformIntProvider.create(2, 5),
-            AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.STONE)));
+            AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).strength(3f).requiresTool().sounds(BlockSoundGroup.STONE)));
+    public static final Block MINERAL_OF_RUBY = registerBlock("mineral_of_ruby",
+            new ExperienceDroppingBlock(
+                    UniformIntProvider.create(2, 3),
+                    AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.STONE)));
+    public static final Block BLOCK_OF_RUBY = registerBlock("block_of_ruby",
+            new ExperienceDroppingBlock(
+                    UniformIntProvider.create(2, 3),
+                    AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.METAL)));
 
 
 
     public static final Block DEEPSLATE_MOON_ORE = registerBlock("deepslate_moon_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),
-            AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
+            AbstractBlock.Settings.create().mapColor(MapColor.DEEPSLATE_GRAY).strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
 
 
     private static Block registerBlock(String name,Block block){
@@ -48,6 +57,8 @@ public class ModBlocks {
                 entries.add(ModBlocks.RAW_MOON_BLOCK);
                 entries.add(ModBlocks.MINERAL_OF_MOON);
                 entries.add(ModBlocks.DEEPSLATE_MOON_ORE);
+                entries.add(ModBlocks.MINERAL_OF_RUBY);
+                entries.add(ModBlocks.BLOCK_OF_RUBY);
           } );
     }
 }

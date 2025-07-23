@@ -31,6 +31,16 @@ public class ModItemGroups {
 
                         } )
                         .build());
+    public static final ItemGroup RUBY_BLOCKS_GROUPS = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(ExampleMod.MOD_ID,"ruby_blocks"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.BLOCK_OF_RUBY))
+                    .displayName(Text.translatable("itemgroup.examplemod.ruby_blocks"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.MINERAL_OF_RUBY);
+                        entries.add(ModBlocks.BLOCK_OF_RUBY);
+
+                    } )
+                    .build());
 
     public static final ItemGroup MOON_BLOCKS_GROUPS = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(ExampleMod.MOD_ID,"moon_blocks"),

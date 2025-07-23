@@ -2,7 +2,8 @@
   "replace": false,
   "values": [
     "examplemod:moon_block",
-    "examplemod:raw_moon_block"
+    "examplemod:raw_moon_block",
+    "examplemod:mineral_of_ruby"
 
   ]
 
