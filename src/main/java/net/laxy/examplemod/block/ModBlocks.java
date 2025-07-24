@@ -35,7 +35,9 @@ public class ModBlocks {
             new ExperienceDroppingBlock(
                     UniformIntProvider.create(2, 3),
                     AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.METAL)));
-
+    public static final Block DEEPSLATE_RUBY_ORE = registerBlock("deepslate_ruby_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 3),
+                    AbstractBlock.Settings.create().mapColor(MapColor.DEEPSLATE_GRAY).strength(3f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
 
 
     public static final Block DEEPSLATE_MOON_ORE = registerBlock("deepslate_moon_ore",
@@ -59,6 +61,7 @@ public class ModBlocks {
                 entries.add(ModBlocks.DEEPSLATE_MOON_ORE);
                 entries.add(ModBlocks.MINERAL_OF_RUBY);
                 entries.add(ModBlocks.BLOCK_OF_RUBY);
+                entries.add(ModBlocks.DEEPSLATE_RUBY_ORE);
           } );
     }
 }

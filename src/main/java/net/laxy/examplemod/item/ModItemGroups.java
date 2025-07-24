@@ -38,6 +38,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.MINERAL_OF_RUBY);
                         entries.add(ModBlocks.BLOCK_OF_RUBY);
+                        entries.add(ModBlocks.DEEPSLATE_RUBY_ORE);
 
                     } )
                     .build());
