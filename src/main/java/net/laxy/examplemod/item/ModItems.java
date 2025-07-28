@@ -14,6 +14,8 @@ public class ModItems {
 public static final Item MOONSTONE_ORE = registerItem("moonstone_ore", new Item(new Item.Settings()));
 public static final Item MOON_INGOT = registerItem("moon_ingot",new Item(new Item.Settings()));
 public static final Item RUBY_ORE = registerItem("ruby_ore",new Item(new Item.Settings()));
+public static final Item MUSHROOM = registerItem("mushroom",new Item(new Item.Settings().food(ModFoodComponents.MUSHROOM)));
+public static final Item RUBY_ASHES = registerItem("ruby_ashes",new Item(new Item.Settings()));
 
 public static final Item MOON_WIND = registerItem("moon_wind",new MoonWindItem(new Item.Settings().maxDamage(32)));
     private static Item registerItem(String name, Item item){
@@ -25,6 +27,7 @@ public static final Item MOON_WIND = registerItem("moon_wind",new MoonWindItem(n
             entries.add(MOONSTONE_ORE);
             entries.add(MOON_INGOT);
             entries.add(RUBY_ORE);
+
 
         } );
     }

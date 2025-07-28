@@ -29,6 +29,7 @@ public class ModItemGroups {
                         .displayName(Text.translatable("itemgroup.examplemod.ruby_items"))
                         .entries((displayContext, entries) -> {
                             entries.add(ModItems.RUBY_ORE);
+                            entries.add(ModItems.RUBY_ASHES);
 
                         } )
                         .build());
@@ -56,8 +57,15 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DEEPSLATE_MOON_ORE);
                     } )
                     .build());
-    //prueba
+    public static final ItemGroup WEIRD_FOOD = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(ExampleMod.MOD_ID,"weird_food"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.MUSHROOM))
+                    .displayName(Text.translatable("itemgroup.examplemod.weird_food"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.MUSHROOM);
 
+                    } )
+                    .build());
     public static void registerItemGroups(){
         ExampleMod.LOGGER.info("Registering Item Groups for" + ExampleMod.MOD_ID);
     }

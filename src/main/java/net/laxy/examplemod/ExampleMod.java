@@ -2,6 +2,7 @@ package net.laxy.examplemod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.laxy.examplemod.block.ModBlocks;
 import net.laxy.examplemod.item.ModItemGroups;
 import net.laxy.examplemod.item.ModItems;
@@ -20,7 +21,7 @@ public class ExampleMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 
-
+		FuelRegistry.INSTANCE.add(ModItems.RUBY_ASHES,2000);
 
 		LOGGER.info("Hello Fabric world!");
 	}
