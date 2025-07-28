@@ -2,6 +2,7 @@ package net.laxy.examplemod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.laxy.examplemod.ExampleMod;
+import net.laxy.examplemod.item.custom.MoonWindItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
@@ -13,6 +14,8 @@ public class ModItems {
 public static final Item MOONSTONE_ORE = registerItem("moonstone_ore", new Item(new Item.Settings()));
 public static final Item MOON_INGOT = registerItem("moon_ingot",new Item(new Item.Settings()));
 public static final Item RUBY_ORE = registerItem("ruby_ore",new Item(new Item.Settings()));
+
+public static final Item MOON_WIND = registerItem("moon_wind",new MoonWindItem(new Item.Settings().maxDamage(32)));
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(ExampleMod.MOD_ID,name),item);
     }
