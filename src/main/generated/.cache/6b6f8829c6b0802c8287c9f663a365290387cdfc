@@ -1,0 +1,9 @@
+// 1.21	2025-08-02T18:18:07.0785784	Example Mod/Block Loot Tables
+f2a06226bd4b0096cc129e1a925fe7c79f97b0ed data\examplemod\loot_table\blocks\moon_block.json
+733d2fa3271ad95fa26741bafd39ff7fe4799686 data\examplemod\loot_table\blocks\deepslate_ruby_ore.json
+5d9980270f7855ee7b3053db22416bac4e155f0e data\examplemod\loot_table\blocks\magic_block.json
+ff898ed19121bad6a7d1bee26b49ae1f68259af8 data\examplemod\loot_table\blocks\deepslate_moon_ore.json
+08c7929df443d327a784dbe09b5449db74880e89 data\examplemod\loot_table\blocks\mineral_of_ruby.json
+c0c8d93597ec26961455f58480598489a4673023 data\examplemod\loot_table\blocks\mineral_of_moon.json
+ef48658533468283fa085a43d429ce9d0a8953d0 data\examplemod\loot_table\blocks\raw_moon_block.json
+1d5eee187ecd2751177b30dda2d131128f901bc4 data\examplemod\loot_table\blocks\block_of_ruby.json

@@ -1,0 +1,3 @@
+// 1.21	2025-08-02T18:18:07.0775777	Example Mod/Tags for minecraft:block
+fad1a6865ce6cd66216407e4b7a9761b914bd095 data\minecraft\tags\block\mineable\pickaxe.json
+23063a1059c795bbd905d659cb18a9d724c2359d data\minecraft\tags\block\needs_iron_tool.json

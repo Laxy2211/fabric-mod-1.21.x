@@ -19,7 +19,7 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 public class ModBlocks {
 
     public static final Block MOON_BLOCK =registerBlock("moon_block",new Block(AbstractBlock.Settings.create().strength(3f)
-            .requiresTool().sounds(BlockSoundGroup.ANVIL)));
+            .requiresTool().sounds(BlockSoundGroup.METAL)));
 
     public static final Block RAW_MOON_BLOCK = registerBlock("raw_moon_block", new Block(AbstractBlock.Settings.create().strength(3f)
             .requiresTool().sounds(BlockSoundGroup.CALCITE)));

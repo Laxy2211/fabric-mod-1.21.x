@@ -16,6 +16,8 @@
   "itemgroup.examplemod.moon_items": "Moon ore Items",
   "itemgroup.examplemod.moon_blocks": "Moon blocks",
   "itemgroup.examplemod.ruby_items": "Ruby items",
-  "itemgroup.examplemod.ruby_blocks": "Ruby blocks"
+  "itemgroup.examplemod.ruby_blocks": "Ruby blocks",
+  "tooltip.examplemod.moon_wind.tooltip": "this item is a headache",
+  "tooltip.tutorialmod.magic_block.tooltip": "this block is a headache"
 
 }
